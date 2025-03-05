@@ -65,15 +65,28 @@
                     </a>
                   </li>
                   <li class="global-navs__list dropdown hoverEffect active">
-                    <a class="global-navs__items js-parentDropdown" href="#;">
-                      <span class="global-navs__items-label">Explore</span>
+                    <a class="global-navs__items js-parentDropdown" href="javascript:void(0);" onclick="scrollToStay()">
+                        <span class="global-navs__items-label">Choose Your Stay</span>
                     </a>
+                </li>
+                
+                    <!--
                   </li>
                   <li class="global-navs__list dropdown hoverEffect active">
                     <a class="global-navs__items js-parentDropdown" href="#;">
-                      <span class="global-navs__items-label">Experiences</span>
-                    </a>
-                  </li>
+                      <span class="global-navs__items-label">Book Your Tent/Stay</span>
+                    </a> -->
+
+                    <li class="global-navs__list dropdown hoverEffect active">
+                      <a class="global-navs__items js-parentDropdown" href="javascript:void(0);" onclick="scrollToBottom();">
+                        <span class="global-navs__items-label">Book Your Tent/Stay</span>
+                      </a>
+                    </li>
+                    
+              
+                    
+                  <!--
+
                   <li class="global-navs__list dropdown hoverEffect active">
                     <a class="global-navs__items js-parentDropdown" href="#;">
                       <span class="global-navs__items-label">Blog</span>
@@ -91,7 +104,7 @@
                   </li>
                   <li class="global-navs__list ">
                     <a class="theme__btn theme__btn--grey" href="#;" target="_blank">
-                      Sign in
+                      Sign in -->
                     </a>
                   </li>
                 </ul>
@@ -110,17 +123,22 @@
             <div class="owl-carousel owl-theme homeProductSlide">
               <div class="cardView design1">
                 <a href="#;" class="cardView__content">
-                  <img src="dist/images/banner/banner-1.webp" class="img-fluid u-image">
+                  <img src="dist/images/banner/banner-5.jpg" class="img-fluid u-image">
                 </a>
               </div>
               <div class="cardView design1">
                 <a href="#;" class="cardView__content">
-                  <img src="dist/images/banner/banner-2.webp" class="img-fluid u-image">
+                  <img src="dist/images/banner/banner-2.jpg" class="img-fluid u-image">
                 </a>
               </div>
               <div class="cardView design1">
                 <a href="#;" class="cardView__content">
-                  <img src="dist/images/banner/banner-3.png" class="img-fluid u-image">
+                  <img src="dist/images/banner/banner-3.jpg" class="img-fluid u-image">
+                </a>
+              </div>
+              <div class="cardView design1">
+                <a href="#;" class="cardView__content">
+                  <img src="dist/images/banner/banner-4.jpg" class="img-fluid u-image">
                 </a>
               </div>
             </div>
@@ -130,33 +148,49 @@
     </div>
   </section>
 
-  <div class="proCard withBg">
+  <div  id="staySection" class="proCard withBg">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="proCard__container">
             <div class="proCard__container-head">
               <div class="info">
-                <h2 class="title">Discover top spots around you</h2>
-                <h4 class="caption">Choose from a wide variety of accommodations across the best properties in India.
+                <h2 class="title">Stay Under the Stars – Premium Tents & Comfort Awaits</h2>
+               <!-- <h4 class="caption">Choose from a wide variety of accommodations across the best properties in India.-->
                 </h4>
               </div>
               <div class="action">
-                <a href="javascript:;" class="themeTextLink">View All</a>
+                <!--<a href="javascript:;" class="themeTextLink">View All</a> -->
               </div>
             </div>
             <div class="proCard__container-card">
               <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-14">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-1.jpeg" alt="image" class="img-fluid">
+                      <img src="dist/images/content-images/image-1.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Camp Monk Bannerghatta
+                        <h2 class="title">Dreamy Sunset Camping!
                         </h2>
-                        <div class="caption">Our flagship property at Bannerghatta nestled in nature and by a pristine
+                        <div class="caption">Cozy A-frame tent with a comfy bed and warm lighting for a perfect glamping experience.
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div class="proCard__card">
+                    <div class="proCard__card-media">
+                      <img src="dist/images/content-images/image-2.jpg" alt="image" class="img-fluid">
+                    </div>
+                    <div class="proCard__card-details">
+                      <div class="cardHead">
+                        <h2 class="title"> Cozy A-Frame Stay!
+                        </h2>
+                        <div class="caption">Stylish A-frame tent with a scenic outdoor view, blending adventure and comfort.
                           lake</div>
                       </div>
 
@@ -166,14 +200,13 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-2.jpeg" alt="image" class="img-fluid">
+                      <img src="dist/images/content-images/image-3.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Camp Monk Bannerghatta
+                        <h2 class="title">Scenic Glamping Escape!
                         </h2>
-                        <div class="caption">Our flagship property at Bannerghatta nestled in nature and by a pristine
-                          lake</div>
+                        <div class="caption">Charming dome tent with a sunset view, cozy bedding, and a dreamy camping vibe.</div>
                       </div>
 
                     </div>
@@ -182,36 +215,21 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-3.jpeg" alt="image" class="img-fluid">
+                      <img src="dist/images/content-images/image-4.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Camp Monk Bannerghatta
+                        <h2 class="title">Sunset Dome Retreat!
                         </h2>
-                        <div class="caption">Our flagship property at Bannerghatta nestled in nature and by a pristine
-                          lake</div>
+                        <div class="caption">Sunset Magic: Relax in a Dreamy Dome Tent!
+                          </div>
                       </div>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                  <div class="proCard__card">
-                    <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-4.jpeg" alt="image" class="img-fluid">
-                    </div>
-                    <div class="proCard__card-details">
-                      <div class="cardHead">
-                        <h2 class="title">Camp Monk Bannerghatta
-                        </h2>
-                        <div class="caption">Our flagship property at Bannerghatta nestled in nature and by a pristine
-                          lake</div>
-                      </div>
-
+                        
                     </div>
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>
@@ -226,42 +244,49 @@
             <div class="proCard__container-card">
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-12">
-                  <div class="proCard__card v2"> 
+                 <!-- <div class="proCard__card v2"> 
                     <div class="proCard__card-details clr1">
-                      <div class="cardHead">
-                        <img src="dist/images/svg/user-heart.svg" alt="icon" class="img-fluid u-image">
+                      <div class="cardHead"> 
+                        <img src="dist/images/svg/user-heart.svg" alt="icon" class="img-fluid u-image"> -->
+
+                        <!--
                         <h2 class="title">Become a host
                         </h2>
                         <div class="caption">Camp Monk is a curated platform showcasing the best nature stays in India. Be it camping, glamping or a cabin in the woods. Sign up and apply to partner your land with us where you can host our curated community of outdoor enthusiasts across India, and earn additional income.</div>
-                        <a href="javascript:;" class="u-button">Partner with Camping Sthan</a>
+                        <a href="javascript:;" class="u-button">Partner with Camping Sthan</a> -->
                       </div> 
                     </div>
                   </div>
                 </div>
+                
                 <div class="col-md-6 col-sm-6 col-12">
-                  <div class="proCard__card v2"> 
+                  <!-- <div class="proCard__card v2"> 
                     <div class="proCard__card-details clr2">
                       <div class="cardHead">
-                        <img src="dist/images/svg/covid-mask.svg" alt="icon" class="img-fluid u-image">
+                        <img src="dist/images/svg/covid-mask.svg" alt="icon" class="img-fluid u-image"> -->
+
+                        <!--
                         <h2 class="title">Covid Guidelines
                         </h2>
                         <div class="caption">Camp Monk’s COVID safety standards have been implemented in all the listings. See what’s being done for all places, in India.</div>
-                        <a href="javascript:;" class="u-button">Learn more about our safety</a>
-                      </div> 
+                        <a href="javascript:;" class="u-button">Learn more about our safety</a> -->
+            
+                        </div> 
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                  </div>
+                  </div>
+            
             <div class="proCard__container-head">
               <div class="info">
-                <h2 class="title">Events</h2>
-                <h4 class="caption">Choose your vibe from our curated list of events held across our properties in
-                  India.
+                
+                <h2 class="title">Happy Campers, Happy Stories!</h2>
+                <h4 class="caption">See what our guests love about their stay at our scenic campsites across India!
                 </h4>
               </div>
               <div class="action">
-                <a href="javascript:;" class="themeTextLink">View All</a>
+               <!-- <a href=";" class="themeTextLink">View All</a>-->
               </div>
             </div>
             <div class="proCard__container-card">
@@ -269,22 +294,21 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-1.jpeg" alt="image" class="img-fluid">
-                      <span class="floatItem">6:15am - 11:00am</span>
+                      <img src="dist/images/content-images/T1.png" alt="image" class="img-fluid">
+                
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Trails and Tyres Camp at Sakleshpur 20-Dec -2024 to 22- Dec- 2024 (Fri-Sun)
+                        
                         </h2>
-                        <div class="caption highlighted">Bring your tent or RV</div>
+                       
                       </div>
                       <div class="cardFooter">
                         <div class="left-item">
-                          <span class="label">3 spots left</span>
+                          
                         </div>
                         <div class="right-item">
-                          <span class="value">₹ 7,000</span>
-                          <span class="label">3 spots left</span>
+                          
                         </div>
                       </div>
                     </div>
@@ -293,22 +317,22 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-2.jpeg" alt="image" class="img-fluid">
-                      <span class="floatItem">6:15am - 11:00am</span>
+                      <img src="dist/images/content-images/T2.png" alt="image" class="img-fluid">
+                      
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Trails and Tyres Camp at Sakleshpur 20-Dec -2024 to 22- Dec- 2024 (Fri-Sun)
+                        
                         </h2>
-                        <div class="caption highlighted">Bring your tent or RV</div>
+                        
                       </div>
                       <div class="cardFooter">
                         <div class="left-item">
-                          <span class="label">3 spots left</span>
+                          
                         </div>
                         <div class="right-item">
-                          <span class="value">₹ 7,000</span>
-                          <span class="label">3 spots left</span>
+                         
+                          
                         </div>
                       </div>
                     </div>
@@ -317,22 +341,22 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-3.jpeg" alt="image" class="img-fluid">
-                      <span class="floatItem">6:15am - 11:00am</span>
+                      <img src="dist/images/content-images/T3.png" alt="image" class="img-fluid">
+                      
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Trails and Tyres Camp at Sakleshpur 20-Dec -2024 to 22- Dec- 2024 (Fri-Sun)
+                        
                         </h2>
-                        <div class="caption highlighted">Bring your tent or RV</div>
+                        
                       </div>
                       <div class="cardFooter">
                         <div class="left-item">
-                          <span class="label">3 spots left</span>
+                          
                         </div>
                         <div class="right-item">
-                          <span class="value">₹ 7,000</span>
-                          <span class="label">3 spots left</span>
+                          
+                          
                         </div>
                       </div>
                     </div>
@@ -341,22 +365,22 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-4.jpeg" alt="image" class="img-fluid">
-                      <span class="floatItem">6:15am - 11:00am</span>
+                      <img src="dist/images/content-images/T4.png" alt="image" class="img-fluid">
+                      
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Trails and Tyres Camp at Sakleshpur 20-Dec -2024 to 22- Dec- 2024 (Fri-Sun)
+                        
                         </h2>
-                        <div class="caption highlighted">Bring your tent or RV</div>
+                        
                       </div>
                       <div class="cardFooter">
                         <div class="left-item">
-                          <span class="label">3 spots left</span>
+                         
                         </div>
                         <div class="right-item">
-                          <span class="value">₹ 7,000</span>
-                          <span class="label">3 spots left</span>
+                          
+                          
                         </div>
                       </div>
                     </div>
@@ -365,22 +389,22 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-5.jpeg" alt="image" class="img-fluid">
-                      <span class="floatItem">6:15am - 11:00am</span>
+                      <img src="dist/images/content-images/T5.png" alt="image" class="img-fluid">
+                      
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Trails and Tyres Camp at Sakleshpur 20-Dec -2024 to 22- Dec- 2024 (Fri-Sun)
+                        
                         </h2>
-                        <div class="caption highlighted">Bring your tent or RV</div>
+                        
                       </div>
                       <div class="cardFooter">
                         <div class="left-item">
-                          <span class="label">3 spots left</span>
+                          
                         </div>
                         <div class="right-item">
-                          <span class="value">₹ 7,000</span>
-                          <span class="label">3 spots left</span>
+                          
+                          
                         </div>
                       </div>
                     </div>
@@ -389,22 +413,22 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                   <div class="proCard__card">
                     <div class="proCard__card-media">
-                      <img src="dist/images/content-images/image-6.jpeg" alt="image" class="img-fluid">
-                      <span class="floatItem">6:15am - 11:00am</span>
+                      <img src="dist/images/content-images/T6.png" alt="image" class="img-fluid">
+                     
                     </div>
                     <div class="proCard__card-details">
                       <div class="cardHead">
-                        <h2 class="title">Trails and Tyres Camp at Sakleshpur 20-Dec -2024 to 22- Dec- 2024 (Fri-Sun)
+                        
                         </h2>
-                        <div class="caption highlighted">Bring your tent or RV</div>
+                        
                       </div>
                       <div class="cardFooter">
                         <div class="left-item">
-                          <span class="label">3 spots left</span>
+                          
                         </div>
                         <div class="right-item">
-                          <span class="value">₹ 7,000</span>
-                          <span class="label">3 spots left</span>
+                          
+                          
                         </div>
                       </div>
                     </div>
@@ -417,7 +441,7 @@
       </div>
     </div>
   </div>
-
+ <!-- 
   <div class="proCard withBgTheme">
     <div class="container">
       <div class="row">
@@ -425,12 +449,16 @@
           <div class="proCard__container">
             <div class="proCard__container-head mb-0">
               <div class="info">
+  -->
+                <!-- 
                 <h2 class="title">Subscribe to our Newsletter</h2>
                 <h4 class="caption">Be the first to know when we add new properties.
                 </h4>
+                
               </div>
               <div class="action">
                 <a href="javascript:;" class="themeTextLink">Subscribe</a>
+                -->
               </div>
             </div>
             
@@ -447,32 +475,50 @@
           <div class="footer__primary">
             <div class="contact">
               <a href="tel:+91-7558640623" class="u-link">
-                <span class="label">Call us at</span>
-                <span class="value">+91 9999 999 999</span>
+                <span class="label">Call for Booking</span>
+                <span class="value">+91-7558640623</span>
               </a>
             </div>
             <div class="logo">
               <img src="dist/images/logo/camping-sthan-logo.png" alt="CAMPING STHAN LOGO" class="img-fluid">
             </div>
             <ul class="social">
+               <!--
               <li class="social__item">
                 <a href="javascript:;" class="social__link">
-                  <img src="dist/images/svg/fb.svg" alt="Facebook logo" class="img-fluid">
-                </a>
+                  <img src="dist/images/svg/fbb.svg" alt="Facebook logo" class="img-fluid">
+                </a> -->
+                  <!--
               </li>
               <li class="social__item">
                 <a href="javascript:;" class="social__link">
                   <img src="dist/images/svg/tw.svg" alt="Twitter logo" class="img-fluid">
                 </a>
+                 -->
+                
               </li>
               <li class="social__item">
-                <a href="javascript:;" class="social__link">
-                  <img src="dist/images/svg/in.svg" alt="Linkedin logo" class="img-fluid">
+
+                <a href="https://www.instagram.com/campingsthan/" class="social__link" target="_blank" rel="noopener noreferrer">
+                  <img src="dist/images/svg/inst.svg" alt="Instagram" class="img-fluid">
+              </a>
+              <!--
+                <a href="https://www.instagram.com/campingsthan/" class="social__link">
+                  <img src="dist/images/svg/inst.svg" alt="Instagram" class="img-fluid">
+                 -->
                 </a>
               </li>
               <li class="social__item">
+
+                <a href="https://wa.me/917558640623" class="social__link" target="_blank" rel="noopener noreferrer">
+                  <img src="dist/images/svg/wa.svg" alt="WhatsApp" class="img-fluid">
+              </a>
+              
+      
+                  <!-- 
                 <a href="javascript:;" class="social__link">
-                  <img src="dist/images/svg/yt.svg" alt="YouTube logo" class="img-fluid">
+                  <img src="dist/images/svg/wa.svg" alt="whatsapp logo" class="img-fluid">
+                  -->
                 </a>
               </li>
             </ul>
@@ -484,15 +530,16 @@
                   Contact Us
                 </div>
                 <div class="footer__content">
-                  <p>Camping Sthan - Some Caption about us</p>
-                  <p><span>Location:</span> JFMW+MHQ, Gevhande Khadak, Maharashtra 412108</p>
-                  <p><span>Google <Map></Map>:</span>https://maps.app.goo.gl/UZmBeoRRZnXFoYEi7</p>
-                  <p><span>Contact Customer:</span> +91-7558640623</p>
-                  <p><span>Email:</span> info@campingsthan.com</p>
+                  <!--<p>Camping Sthan - Some Caption about us</p>/ -->
+                  <p><span>Address: </span> Gevhande Khadak, Maharashtra 412108</p>
+                  <p><span>Contact for Booking:</span> +91-9011354222/ +91-7558640623</p>
+                  <p><span>Email: </span> Campingsthan@gmail.com</p>
                 </div>
               </div>
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
                 <div class="footer__head">
+
+                  <!--
                   Important Links
                 </div>
                 <div class="footer__content">
@@ -515,6 +562,7 @@
                     <li class="footer__item">
                       <a href="javascript:;" class="footer__link">
                         Blog
+                        -->
                       </a>
                     </li>
                   </ul>
@@ -528,6 +576,8 @@
                   <ul class="footer__menu">
                     <li class="footer__item">
                       <a href="javascript:;" class="footer__link">
+
+                         <!--
                         Events
                       </a>
                     </li>
@@ -551,13 +601,19 @@
         <div class="row">
           <div class="col-12">
             <div class="footer__bottom">
-              <div class="info">Copyright © 2024 | All Rights Reserved by Camping Sthan</div>
+              <div class="info">Copyright © 2025 | All Rights Reserved by Camping Sthan</div>
               <ul class="footer__bottom-list">
                 <li class="footer__bottom-item">
+                  <!--
                   <div class="contact">
-                    <a href="tel:+91-7558640623" class="u-link">
+                    <a href="tel:9716828436" class="u-link">
+                    -->
+                      <!--
                       <span class="label">Contact Customer Support</span>
                       <span class="value">+91-7558640623</span>
+                      -->
+
+          
                     </a>
                   </div>
                 </li>
@@ -620,10 +676,23 @@
         return false;  // Do not redirect
       } else {
         // If validation passes, redirect to the URL
-        window.location.href = 'https://api.whatsapp.com/send?phone=917558640623 05692&text=Hello,%20I%20am%20interested%20in%20Demo%20with%20your%20Products.%20Please%20contact%20us.';  // Replace with your URL
+        window.location.href = 'https://api.whatsapp.com/send?phone=9184271 05692&text=Hello,%20I%20am%20interested%20in%20Demo%20with%20your%20Products.%20Please%20contact%20us.';  // Replace with your URL
       }
     }
   </script>
+  
+  <script>
+    function scrollToBottom() {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
+  <script>
+    function scrollToStay() {
+        document.getElementById('staySection').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  
+  
 </body>
 
 </html>
